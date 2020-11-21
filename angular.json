@@ -118,6 +118,32 @@
           }
         }
       }
+    },
+    "angular-tailwind-ui": {
+      "projectType": "library",
+      "root": "libs/angular-tailwind-ui",
+      "sourceRoot": "libs/angular-tailwind-ui/src",
+      "prefix": "angular-tailwind-ui",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/angular-tailwind-ui/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/angular-tailwind-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

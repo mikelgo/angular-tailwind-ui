@@ -29,6 +29,9 @@
     "angular-tailwind-ui-demo-e2e": {
       "tags": [],
       "implicitDependencies": ["angular-tailwind-ui-demo"]
+    },
+    "angular-tailwind-ui": {
+      "tags": []
     }
   }
 }
